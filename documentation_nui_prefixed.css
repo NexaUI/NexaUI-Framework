@@ -1,0 +1,389 @@
+/*
+===========================================================
+NexaUI - framework v1
+Created by: Matthew Galpin
+Website: [N/A]
+GitHub: https://github.com/NexaUI
+===========================================================
+*/
+
+body {
+    font-family: 'NexaUI-Regular', sans-serif;
+    color: #37474f;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'NexaUI-Light', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjusted from 8rem */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.75rem; /* Adjusted from 2.8rem */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #607d8b;
+    font-size: 1.5rem; /* Adjusted from 4.2rem */
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    color: #607d8b;
+    font-size: 1.25rem; /* Adjusted from 2.4rem */
+    margin: 1rem 0 0.8rem;
+}
+
+p {
+    font-size: 1rem; /* Adjusted from 1.8rem */
+}
+
+p.small {
+    font-size: 0.9rem; /* Adjusted from 1.6rem */
+}
+
+p > a {
+    text-decoration: none;
+    color: #2196f3;
+    border-bottom: 1px solid #bbdefb;
+}
+
+p > a:hover {
+    color: #90caf9;
+}
+
+footer {
+    font-size: 0.9rem; /* Adjusted from 1.4rem */
+    margin: 3rem 0;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.nui-banner {
+    text-align: center;
+    padding: 4rem 0; /* Adjusted from 8rem */
+    background-color: #007bff;
+    box-shadow: inset 0px -11px 8px -10px #b0bec5;
+}
+
+.nui-banner-h1 {
+    color: #fff;
+}
+
+.nui-banner-h2 {
+    color: #fff;
+}
+
+.nui-top-bar {
+    text-align: center;
+    line-height: 3rem; /* Adjusted from 5rem */
+    padding-top: 0.75rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #cfd8dc;
+    background-color: #f5f5f5;
+    margin-bottom: 3rem; /* Adjusted from 6rem */
+}
+
+.nui-top-bar > a > img {
+    padding: 0 0.25rem;
+}
+
+.nui-container {
+    max-width: 1200px;  /* You can adjust this value as per your design preference */
+    margin: 0 auto;     /* This centers the container */
+    padding: 20px;      /* This adds 20px of padding to all sides */
+}
+
+.nui-content {
+    padding: 2rem;
+    margin-bottom: 3rem; /* Adjusted from 6rem */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nui-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nui-column {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d32f2f;
+}
+
+.nui-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nui-btn:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+.nui-note {
+    padding: 1rem;
+    border: 1px solid #ffeb3b;
+    background-color: #fffde7;
+    border-radius: 4px;
+}
+
+.nui-warning {
+    padding: 1rem;
+    border: 1px solid #f44336;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+/* Common Components */
+
+/* Buttons */
+.nui-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nui-button:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary Button */
+.nui-button.secondary {
+    background-color: #6c757d;
+}
+
+.nui-button.secondary:hover {
+    background-color: #495057;
+}
+
+/* Success Button */
+.nui-button.success {
+    background-color: #28a745;
+}
+
+.nui-button.success:hover {
+    background-color: #1e7e34;
+}
+
+/* Danger Button */
+.nui-button.danger {
+    background-color: #dc3545;
+}
+
+.nui-button.danger:hover {
+    background-color: #bd2130;
+}
+
+/* Warning Button */
+.nui-button.warning {
+    background-color: #ffc107;
+}
+
+.nui-button.warning:hover {
+    background-color: #d39e00;
+}
+
+/* Info Button */
+.nui-button.info {
+    background-color: #17a2b8;
+}
+
+.nui-button.info:hover {
+    background-color: #117a8b;
+}
+
+/* Alerts */
+.nui-alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Success Alert */
+.nui-alert.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Warning Alert */
+.nui-alert.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+/* Danger Alert */
+.nui-alert.danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Forms */
+.nui-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nui-form-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nui-form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #f8f8f8;
+}
+
+/* Notes and Warnings */
+.nui-note {
+    padding: 1rem;
+    border: 1px solid #ffeb3b;
+    background-color: #fffde7;
+    border-radius: 4px;
+}
+
+.nui-warning {
+    padding: 1rem;
+    border: 1px solid #f44336;
+    background-color: #ffebee;
+    border-radius: 4px;
+}
+
+
+
+
+/* =====================
+   Layout System
+===================== */
+.nui-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nui-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.nui-col {
+    flex: 1;
+    padding: 15px;
+}
+
+/* =====================
+   Typography
+===================== */
+/* ... existing typography styles ... */
+
+/* =====================
+   Buttons
+===================== */
+.nui-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nui-button-primary {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.nui-button-secondary {
+    background-color: #6C757D;
+    color: #FFFFFF;
+}
+
+.nui-button:hover {
+    filter: brightness(0.9);
+}
+
+/* ... and so on for other components ... */
+
